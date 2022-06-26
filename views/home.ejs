@@ -1,0 +1,11 @@
+<%- include('partials/header') -%>
+<h1>Home</h1>
+<p><%=pageCont%></p>
+<% posts.forEach((post)=>{ %>
+    <div class="post-div">
+        <a href=""><h1><%=post.postTitle%></h1></a>
+        <a href=""><p><%=post.postContent%></p></a>
+        <!-- <button onclick="delPost()">Delete</button> -->
+    </div>
+    <%})%>
+<%- include('partials/footer') -%> 
