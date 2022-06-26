@@ -1,10 +1,10 @@
 <%- include('partials/header') -%>
 <h1>Home</h1>
-<p><%=pageCont%></p>
+<p class="post-content"><%=pageCont%></p>
 <% posts.forEach((post)=>{ %>
     <div class="post-div">
-        <a href=""><h1><%=post.postTitle%></h1></a>
-        <a href=""><p><%=post.postContent%></p></a>
+        <a href="/posts/<%=post.postTitle%>"><h1><%=post.postTitle%></h1></a>
+        <p class="post-content"><%=post.postContent%></p>
         <!-- <button onclick="delPost()">Delete</button> -->
     </div>
     <%})%>
